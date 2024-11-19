@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #97d748;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Banner Image */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #3498db;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: rgb(79, 243, 76);
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #2980b9;
+    border-radius: 4px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Profile Section */
+section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px 0;
+    background-color: #3eda62;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+/* Skills List */
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Contact Section */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-details {
+        margin-left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar.show {
+        display: block;
+    }
+}
